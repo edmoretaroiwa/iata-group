@@ -968,3 +968,63 @@ footer {
 
   .hero h1 { font-size: 3.5rem; }
     }
+/* ============================================================
+   ABOUT PAGE — Extra Styles
+   ============================================================ */
+
+.about-text {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.about-text p {
+  font-size: var(--fs-base);
+  line-height: 1.75;
+  color: var(--text-primary);
+  margin-bottom: var(--s-4);
+}
+
+.about-text strong { color: var(--text-bright); font-weight: 700; }
+.about-text em { color: var(--gold); font-style: italic; }
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--s-6);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mv-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--s-6) var(--s-5);
+  text-align: center;
+  border-top: 4px solid var(--gold);
+  transition: all var(--dur-base) var(--ease);
+}
+
+.mv-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--gold);
+}
+
+.mv-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--s-3);
+}
+
+.mv-card h3 {
+  color: var(--gold);
+  font-size: var(--fs-xl);
+  margin-bottom: var(--s-3);
+}
+
+.mv-card p {
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+  margin: 0;
+   }
