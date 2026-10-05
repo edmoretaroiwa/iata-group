@@ -1250,3 +1250,12 @@ footer {
   line-height: 1.5;
   margin: 0;
    }
+/* ============================================================
+   BENJAMIN'S HERO — Slightly warmer tones
+   ============================================================ */
+
+.benjamin-hero {
+  background:
+    radial-gradient(60% 60% at 50% 30%, rgba(251, 191, 36, 0.18), transparent 70%),
+    linear-gradient(135deg, #1a2456, var(--iata-blue));
+}
