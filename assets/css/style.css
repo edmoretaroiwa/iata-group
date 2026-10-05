@@ -1259,3 +1259,90 @@ footer {
     radial-gradient(60% 60% at 50% 30%, rgba(251, 191, 36, 0.18), transparent 70%),
     linear-gradient(135deg, #1a2456, var(--iata-blue));
 }
+/* ============================================================
+   GALLERY PAGE — Photo grid
+   ============================================================ */
+
+.gallery-hero {
+  background:
+    radial-gradient(60% 60% at 50% 30%, rgba(251, 191, 36, 0.18), transparent 70%),
+    linear-gradient(135deg, var(--iata-blue-dark), var(--iata-blue));
+}
+
+.gallery-hero h1 {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--s-5);
+}
+
+.gallery-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  transition: all var(--dur-base) var(--ease);
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-item:hover {
+  border-color: var(--gold);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, var(--iata-blue-dark), var(--iata-blue));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 3px solid var(--gold);
+  position: relative;
+}
+
+.gallery-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--dur-slow) var(--ease);
+}
+
+.gallery-item:hover .gallery-photo img {
+  transform: scale(1.05);
+}
+
+.gallery-photo.placeholder .gallery-placeholder {
+  display: block !important;
+}
+
+.gallery-placeholder {
+  font-size: 4rem;
+  color: var(--gold);
+  opacity: 0.75;
+}
+
+.gallery-caption {
+  padding: var(--s-4);
+}
+
+.gallery-caption h4 {
+  color: var(--text-bright);
+  font-size: var(--fs-base);
+  font-family: var(--font-head);
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+}
+
+.gallery-caption p {
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+  margin: 0;
+  font-style: italic;
+   }
